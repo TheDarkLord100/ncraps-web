@@ -1,0 +1,115 @@
+.hero {
+  min-height: 100vh;
+  background-image: url('../../assets/images/img_1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur();
+  padding-top: 50px;
+}
+
+/* Overlay Layer */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Ensures content stays above the overlay */
+.hero-content {
+  text-align: center;
+  align-items: center;
+  color: white;
+  max-width: 800px;
+  z-index: 2;
+  /* Places content above the overlay */
+  position: relative;
+}
+
+.hero-content h3 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+.center-img-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.organized-by,
+.association-with {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+.organized-by span,
+.association-with span {
+  color: #fff;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .main h1 {
+    font-size: 2.8rem;
+  }
+  .main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .main h1 {
+    font-size: 2.8rem;
+  }
+  .main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+}

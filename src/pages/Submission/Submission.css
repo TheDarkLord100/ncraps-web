@@ -1,0 +1,48 @@
+p {
+  margin-bottom: 10px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.submission {
+  padding: 155px 100px;
+}
+
+.submission h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.download-link {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.download-link:hover {
+  color: #004c99;
+}
+.submission ul li {
+  padding: 5px 0;
+}
+
+.important {
+  color: red;
+  font-size: 1.3rem;
+}
+
+.important span {
+  color: #000;
+  font-weight: 600;
+}
+
+.rndm {
+  font-size: 1.3rem;
+}

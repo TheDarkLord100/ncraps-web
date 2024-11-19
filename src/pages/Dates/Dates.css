@@ -1,0 +1,22 @@
+.dates {
+  padding: 105px 100px;
+}
+
+.dates h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.dates ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 40px 0;
+}
+
+.dates p {
+  margin-left: 20px;
+  font-size: 1.3rem;
+  padding: 5px 0;
+  font-weight: 500;
+}

@@ -1,0 +1,52 @@
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact {
+  padding: 170px 100px;
+}
+
+.contact h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.contact h3 {
+  margin-left: 10px;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact ul .inner {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.contact ul .inner li {
+  text-align: left;
+  background-color: #fff;
+}
+
+.contact ul .inner p {
+  margin-left: 10px;
+}
+
+.email-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}

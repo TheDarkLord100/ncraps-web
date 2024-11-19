@@ -1,0 +1,45 @@
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.speakers {
+  padding: 100px 100px;
+  text-align: center;
+}
+
+.speakers h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  text-align: left;
+}
+
+.speakers-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.speakers-column {
+  width: 48%; /* Equal width for both columns */
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.speakers-column li {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .speakers-container {
+    flex-direction: column;
+  }
+  .speakers-column {
+    width: 100%; /* Full width on small screens */
+  }
+}

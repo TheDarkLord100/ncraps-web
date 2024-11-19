@@ -1,0 +1,71 @@
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.team {
+  padding: 100px 100px;
+}
+
+.main-cnt {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 0 20px;
+  /* flex-direction: row; */
+}
+
+.main-cnt .container {
+  width: 50%;
+  /* text-align: left; */
+  box-sizing: border-box;
+}
+
+.team h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.team-sections h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.team-sections ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-sections .inner-section {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.inner-section li {
+  /* margin-left: 40px; */
+  list-style: outside;
+  flex: 1;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.inner-section .dit {
+  list-style: none;
+  padding: 0 10px 10px 20px;
+  font-size: 1.2rem;
+  text-align: right;
+  flex: 1.2;
+}
+
+@media screen and (max-width: 760px) {
+  .main-cnt {
+    display: block;
+  }
+}

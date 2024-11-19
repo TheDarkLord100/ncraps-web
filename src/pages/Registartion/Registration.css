@@ -1,0 +1,113 @@
+.registration {
+  padding: 105px 100px;
+}
+
+.registration h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.registration p {
+  font-size: 1.2rem;
+}
+.registration h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.registration h3 a {
+  color: #3072dd;
+}
+
+.registration-table {
+  width: 50%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.registration-table th,
+.registration-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.registration-table th {
+  background-color: #4a86e8;
+  color: white;
+  font-weight: bold;
+}
+
+.registration-table .section-header {
+  background-color: #9fc5e8;
+  font-weight: bold;
+}
+
+.registration-table .row-1,
+.registration-table .row-2,
+.registration-table .row-5,
+.registration-table .row-6 {
+  background-color: #f9cb9c;
+}
+
+.registration-table .row-3 {
+  background-color: #b6d7a8;
+}
+
+.bank-details-table {
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #e7f3f9;
+  margin: 50px 0 30px 0;
+}
+
+/* Header row styling */
+.bank-details-table th {
+  background-color: #58a6c9;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Table cell styling */
+.bank-details-table td {
+  border: 1px solid #d3d3d3;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Alternating row colors for better readability */
+.bank-details-table tr:nth-child(even) {
+  background-color: #f2f8fb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bank-details-table {
+    width: 90%;
+  }
+
+  .bank-details-table th,
+  .bank-details-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration-table {
+    font-size: 14px;
+  }
+
+  .registration-table th,
+  .registration-table td {
+    padding: 8px;
+  }
+}
