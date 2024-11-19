@@ -12,7 +12,7 @@ function Team() {
       <section className="team">
         <h1>Organizing Committee</h1>
         <div className="main-cnt">
-          <div className="conatiner">
+          <div className="container">
             <div className="team-sections">
               <h3>Chief Patrons</h3>
               <ul>
@@ -45,7 +45,7 @@ function Team() {
               <h3>Chairperson(s)</h3>
               <ul>
                 <div className="inner-section">
-                  <li>Prof. Naresh M Chadha Dean </li>
+                  <li>Prof. Naresh M Chadha </li>
                   <p className="dit"> Dean SOPS, DIT University</p>
                 </div>
                 <div className="inner-section">
@@ -137,7 +137,7 @@ function Team() {
               <h3>Website Development</h3>
               <ul>
                 <div className="inner-section">
-                  <li>Rudraksh Gupta (3rd Year B.Tech CSE), </li>
+                  <li>Rudraksh Gupta (3rd Year B.Tech CSE) </li>
                   <p className="dit">DIT University</p>
                 </div>
               </ul>

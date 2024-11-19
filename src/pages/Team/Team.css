@@ -11,9 +11,9 @@ section {
 .main-cnt {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   align-items: flex-start;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   /* flex-direction: row; */
 }
 
@@ -58,14 +58,21 @@ section {
 
 .inner-section .dit {
   list-style: none;
-  padding: 0 10px 10px 20px;
+  padding: 0px 0px 10px 20px;
   font-size: 1.2rem;
-  text-align: right;
-  flex: 1.2;
+  text-align: left;
+  flex: 0.6;
 }
 
-@media screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) {
   .main-cnt {
-    display: block;
+    flex-direction: column;
+
+  }
+  .main-cnt .container {
+    width: 100%;
+  }
+  .team {
+    padding: 70px 40px;
   }
 }

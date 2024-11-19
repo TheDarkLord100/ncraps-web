@@ -1,7 +1,9 @@
 .dates {
   padding: 105px 100px;
 }
-
+.dates span{
+  color:red;
+}
 .dates h1 {
   font-size: 2.2rem;
   font-weight: 600;

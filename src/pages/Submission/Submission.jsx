@@ -21,13 +21,13 @@ function Submission() {
         <ul>
           <li>
             <a href={template} download className="download-link">
-              Abstract/Template
+              Abstract Template
             </a>
           </li>
           <li>
             {' '}
             <a href={paperTemplate} download className="download-link">
-              Abstract/Paper Template
+              Paper Template
             </a>
           </li>
           <li>

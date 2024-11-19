@@ -11,12 +11,12 @@ const Dates = () => (
     <section className="dates">
       <h1>Important Dates</h1>
       <ul>
-        <p>Paper Submission Start : October 25, 2024</p>
-        <p>Last date for Paper Submission : January 15, 2025</p>
-        <p>Notification for Acceptance of paper : January 30, 2025</p>
-        <p>Last date for Online Registration : January 25, 2025</p>
-        <p>Last date for Accommodation Requests : January 30, 2025</p>
-        <p>Conference Date : Febrauary 14-15, 2025</p>
+        <p>Paper Submission Start : <span>October 25, 2024</span></p>
+        <p>Last date for Paper Submission : <span>January 15, 2025</span></p>
+        <p>Notification for Acceptance of paper :<span> January 30, 2025</span></p>
+        <p>Last date for Online Registration : <span>January 25, 2025</span></p>
+        <p>Last date for Accommodation Requests : <span>January 30, 2025</span></p>
+        <p>Conference Date : <span>February 14-15, 2025</span></p>
       </ul>
     </section>
     <Footer />

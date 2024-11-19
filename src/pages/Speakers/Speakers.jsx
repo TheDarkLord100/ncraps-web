@@ -52,7 +52,7 @@ const Speakers = () => {
       <Navbar />
       {/* <HeroSection /> */}
       <section className="speakers">
-        <h1>Speakers</h1>
+        <h1>Tentative Speakers</h1>
         <div className="speakers-container">
           <ul className="speakers-column">
             {firstHalf.map((speaker, index) => (
