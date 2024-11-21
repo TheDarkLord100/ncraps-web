@@ -6,6 +6,7 @@ section {
 
 .contact {
   padding: 170px 100px;
+  min-height: 65vh;
 }
 
 .contact h1 {
@@ -23,7 +24,8 @@ section {
 
 .contact ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap:40px;
 }
 
 .contact ul .inner {
@@ -49,4 +51,17 @@ section {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 20px 20px;
+    margin-top: 70px;
+    min-height: 70vh;
+  }
+  .contact ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
 }

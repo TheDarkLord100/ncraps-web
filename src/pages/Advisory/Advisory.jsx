@@ -63,15 +63,15 @@ function Advisory() {
         <h1>National Advisory Committee</h1>
         <div className="advisory-container">
           <ul className="advisory-column">
-            {firstHalf.map((member, index) => (
+            {advisoryMembers.map((member, index) => (
               <li key={index}>{member}</li>
             ))}
           </ul>
-          <ul className="advisory-column">
+          {/* <ul className="advisory-column">
             {secondHalf.map((member, index) => (
               <li key={index}>{member}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </section>
       <Footer />

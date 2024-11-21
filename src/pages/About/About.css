@@ -1,12 +1,12 @@
 .about-page {
-  padding-top: 80px;
+  padding-top:5rem;
   background-color: #ffffff;
 }
 
 .tabs {
-  padding: 20px 100px;
+  padding: 1.25rem 6.25rem;
   background-color: rgb(255, 255, 255);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -18,7 +18,7 @@
 .tabs h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 40px 0 10px 0;
+  margin: 2.5rem 0 0.625rem 0;
 }
 
 .tabs ul {
@@ -43,7 +43,14 @@
 
 .conference-topics {
   list-style-type: disc;
-  padding-left: 40px;
-  margin-top: 10px;
+  padding-left: 2.5rem;
+  margin-top: 0.625rem;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabs {
+    padding: 1.25rem 1.25rem;
+  }
+  
 }
