@@ -43,9 +43,6 @@ const Speakers = () => {
     'Dr. Amit Singh, REC, Ambedkar Nagar, U.P.',
   ];
 
-  const half = Math.ceil(speakers.length / 2);
-  const firstHalf = speakers.slice(0, half);
-  const secondHalf = speakers.slice(half);
 
   return (
     <>
@@ -55,15 +52,15 @@ const Speakers = () => {
         <h1>Tentative Speakers</h1>
         <div className="speakers-container">
           <ul className="speakers-column">
-            {firstHalf.map((speaker, index) => (
+            {speakers.map((speaker, index) => (
               <li key={index}>{speaker}</li>
             ))}
           </ul>
-          <ul className="speakers-column">
+          {/* <ul className="speakers-column">
             {secondHalf.map((speaker, index) => (
               <li key={index}>{speaker}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </section>
       <Footer />

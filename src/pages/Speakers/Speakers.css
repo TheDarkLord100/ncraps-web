@@ -23,7 +23,7 @@ section {
 }
 
 .speakers-column {
-  width: 48%; /* Equal width for both columns */
+  /* width: 100%; */
   list-style-type: none;
   padding: 0;
   text-align: left;
@@ -36,6 +36,10 @@ section {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .speakers {
+    padding: 20px 20px;
+    margin-top: 70px;
+  }
   .speakers-container {
     flex-direction: column;
   }

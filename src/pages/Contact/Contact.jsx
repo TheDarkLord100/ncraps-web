@@ -16,7 +16,7 @@ const Contact = () => (
           <p>+91-7906546020</p>
         </div>
         <div className="inner">
-          <li>Dr. Praveen Kumar</li>
+          <li>Dr. Parveen Kumar</li>
           <p>+91-9001119747</p>
         </div>
       </ul>
