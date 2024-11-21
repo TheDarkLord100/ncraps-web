@@ -4,150 +4,114 @@ import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
+const teamData = {
+  "Chief Patrons": {
+      "Shri Anuj Aggarwal": {
+          "designation": "Chairman, DIT University"
+      },
+      "Shri N. Ravi Shanker": {
+          "designation": "Chancellor, DIT University"
+      }
+  },
+  "Patrons": {
+      "Prof. G. Raghurama": {
+          "designation": "Vice-Chancellor, DIT University"
+      },
+      "Prof. B V Ramana Reddy": {
+          "designation": "I/C Director, NIT Uttarakhand"
+      }
+  },
+  "Chairpersons": {
+      "Prof. Naresh M Chadha": {
+          "designation": "Dean SOPS, DIT University"
+      },
+      "Prof. Dharmendra Tripathi": {
+          "designation": "NIT Uttarakhand"
+      }
+  },
+  "Academic Advisory Committee": {
+      "Prof. Debashish Chowdhury": {
+          "designation": "SOPS, DIT University"
+      },
+      "Prof. Rakesh Mohan": {
+          "designation": "SOPS, DIT University"
+      },
+      "Prof. Manoj Bhatnagar": {
+          "designation": "SOPS, DIT University"
+      },
+      "Prof. Naveen Singhal": {
+          "designation": "SOPS, DIT University"
+      },
+      "Prof. Surbhi Sachdev": {
+          "designation": "SOPS, DIT University"
+      }
+  },
+  "Conveners": {
+      "Dr. Jogendra Kumar": {
+          "designation": "SOPS, DIT University"
+      },
+      "Dr. Jagrati Sahariya": {
+          "designation": "NIT Uttarakhand"
+      }
+  },
+  "Organizing Secretaries": {
+      "Dr. Parveen Kumar": {
+          "designation": "SOPS, DIT University"
+      },
+      "Dr. Rakesh Kumar Mishra": {
+          "designation": "NIT Uttarakhand"
+      },
+      "Dr. Kusum Sharma": {
+          "designation": "NIT Uttarakhand"
+      }
+  },
+  "Joint Secretaries": {
+      "Dr. Pooja S. Saxena": {
+          "designation": "SOPS, DIT University"
+      },
+      "Dr. Ravi Shukla": {
+          "designation": "SOPS, DIT University"
+      },
+      "Dr. Manisha Duseja": {
+          "designation": "SOPS, DIT University"
+      }
+  },
+  "Website Development": {
+      "Rudraksh Gupta": {
+          "designation": "3rd Year B.Tech CSE",
+          "affiliation": "DIT University"
+      }
+  }
+}
+
 function Team() {
   return (
     <>
       <Navbar />
-      {/* <HeroSection /> */}
       <section className="team">
         <h1>Organizing Committee</h1>
         <div className="main-cnt">
-          <div className="container">
-            <div className="team-sections">
-              <h3>Chief Patrons</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Shri Anuj Aggarwal </li>
-                  <p className="dit">Chairman, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Shri N. Ravi Shanker</li>
-                  <p className="dit"> Chancellor, DIT University</p>
-                </div>
-              </ul>
+          {Object.entries(teamData).map(([section, members]) => (
+            <div className="team-sections" key={section}>
+              <h3>{section}</h3>
+              <table className="team-table">
+                <tbody>
+                  {Object.entries(members).map(([name, details]) => (
+                    <tr key={name}>
+                      <td className="name">{name}</td>
+                      <td className="designation">{details.designation}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-
-            <div className="team-sections">
-              <h3>Patrons</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Prof. G. Raghurama </li>
-                  <p className="dit">Vice-Chancellor, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. B V Ramana Reddy </li>
-                  <p className="dit">I/C Director, NIT Uttarakhand</p>
-                </div>
-              </ul>
-            </div>
-
-            <div className="team-sections">
-              <h3>Chairperson(s)</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Prof. Naresh M Chadha </li>
-                  <p className="dit"> Dean SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. Dharmendra Tripathi </li>
-                  <p className="dit">NIT Uttarakhand</p>
-                </div>
-              </ul>
-            </div>
-
-            <div className="team-sections">
-              <h3>Academic Advisory Committee</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Prof. Debashish Chowdhury </li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. Rakesh Mohan</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. Manoj Bhatnagar </li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. Naveen singhal</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Prof. Surbhi Sachdev</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-              </ul>
-            </div>
-          </div>
-
-          <div className="container second">
-            <div className="team-sections">
-              <h3>Convener(s)</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Dr. Jogendra Kumar</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Dr. Jagrati Sahariya </li>
-                  <p className="dit">NIT Uttarakhand</p>
-                </div>
-              </ul>
-            </div>
-
-            <div className="team-sections">
-              <h3>Organizing Secretary(s)</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Dr. Parveen Kumar</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Dr. Rakesh Kumar Mishra </li>
-                  <p className="dit">NIT Uttarakhand</p>
-                </div>
-                <div className="inner-section">
-                  <li>Dr. Kusum Sharma </li>
-                  <p className="dit">NIT Uttarakhand</p>
-                </div>
-              </ul>
-            </div>
-
-            <div className="team-sections">
-              <h3>Joint Secretaries</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Dr. Pooja S. Saxena</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Dr. Ravi Shukla </li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-                <div className="inner-section">
-                  <li>Dr. Manisha Duseja</li>
-                  <p className="dit">SOPS, DIT University</p>
-                </div>
-              </ul>
-            </div>
-
-            <div className="team-sections">
-              <h3>Website Development</h3>
-              <ul>
-                <div className="inner-section">
-                  <li>Rudraksh Gupta (3rd Year B.Tech CSE) </li>
-                  <p className="dit">DIT University</p>
-                </div>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       <Footer />
     </>
   );
 }
+
 
 export default Team;

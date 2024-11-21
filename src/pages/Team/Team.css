@@ -1,78 +1,46 @@
-section {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
 .team {
-  padding: 100px 100px;
-}
-
-.main-cnt {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: flex-start;
-  /* padding: 0 20px; */
-  /* flex-direction: row; */
-}
-
-.main-cnt .container {
-  width: 50%;
-  /* text-align: left; */
-  box-sizing: border-box;
+  padding-top: 6.25rem;
+  padding-left: 2rem;
+  font-family: Arial, sans-serif;
 }
 
 .team h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
+  text-align: left;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+}
+
+.team-sections {
+  margin-bottom: 1.875rem;
 }
 
 .team-sections h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  padding: 10px 0;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.team-sections ul {
-  display: flex;
-  flex-direction: column;
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.team-sections .inner-section {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
+.team-table td {
+  font-size: 1.25rem;
+  padding: 0 1.25rem;
+  vertical-align: top;
 }
 
-.inner-section li {
-  /* margin-left: 40px; */
-  list-style: outside;
-  flex: 1;
-  background-color: #fff;
-  font-size: 1.3rem;
-}
-
-.inner-section .dit {
-  list-style: none;
-  padding: 0px 0px 10px 20px;
-  font-size: 1.2rem;
+.team-table .name {
+  font-weight: bold;
+  width: 20%;
   text-align: left;
-  flex: 0.6;
 }
 
-@media only screen and (max-width: 760px) {
-  .main-cnt {
-    flex-direction: column;
+.team-table .designation {
+  width: 50%;
+  text-align: left;
+}
 
-  }
-  .main-cnt .container {
-    width: 100%;
-  }
-  .team {
-    padding: 70px 40px;
-  }
+.team-table td {
+  border: none;
 }
