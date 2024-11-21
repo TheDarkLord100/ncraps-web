@@ -1,3 +1,7 @@
+.page-component{
+  min-height: 100vh;
+}
+
 p {
   margin-bottom: 10px;
 }
@@ -9,8 +13,8 @@ section {
 }
 
 .submission {
-  padding: 155px 100px;
-  min-height:100vh;
+  padding: 5rem;
+  /* min-height:100vh; */
 }
 
 .submission h1 {
@@ -52,6 +56,6 @@ section {
   .submission {
     padding: 20px 20px;
     padding-top: 70px;
-    min-height: 75vh;
+    /* min-height: 75vh; */
   }
 }

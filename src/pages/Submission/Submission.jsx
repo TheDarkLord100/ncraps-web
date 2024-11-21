@@ -9,7 +9,7 @@ import Navbar from '../../components/Navbar/Navbar';
 
 function Submission() {
   return (
-    <>
+    <div className="page-component">
       <Navbar />
       {/* <HeroSection /> */}
       <section className="submission">
@@ -43,7 +43,7 @@ function Submission() {
         <p className="important">The same will be updated soon.</p>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

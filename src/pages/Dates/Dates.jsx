@@ -1,13 +1,11 @@
 import React from 'react';
 import './Dates.css';
-// import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Dates = () => (
-  <>
+  <div className="page-component">
     <Navbar />
-    {/* <HeroSection /> */}
     <section className="dates">
       <h1>Important Dates</h1>
       <ul>
@@ -20,7 +18,7 @@ const Dates = () => (
       </ul>
     </section>
     <Footer />
-  </>
+  </div>
 );
 
 export default Dates;

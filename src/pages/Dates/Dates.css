@@ -1,5 +1,9 @@
 .dates {
-  padding: 105px 100px;
+  padding: 5rem;
+  /* min-height: 100vh; */
+}
+
+.page-component{
   min-height: 100vh;
 }
 .dates span{
@@ -28,7 +32,6 @@
   .dates {
     padding: 20px 20px ;
     padding-top: 80px;
-    min-height: 75vh;
   }
   
 }
