@@ -18,6 +18,7 @@ const HeroSection = () => {
         return (
           <>
             <div className="main">
+              <div className="main-content">
               <h3 className="top">6th National Conference</h3>
               <h3>On</h3>
               <h1>RECENT ADVANCEMENT IN PHYSICAL SCIENCES</h1>
@@ -36,6 +37,7 @@ const HeroSection = () => {
                 MRSI, Delhi Chapter
               </p>
               <p className="date">14 – 15 February 2025</p>
+              </div>
             </div>
           </>
         );
