@@ -37,10 +37,10 @@ function Submission() {
           </li>
         </ul>
         <p className="important">
-          <span>**</span>The selected papers will be published in
-          SCOPUS/SCI/SCIE Indexed Journal/Conference Proceedings.
+          <span>**</span>The proposal is submitted to Springer for a possible publication in a Scopus Indexed Book series. 
+          The proposal will be decided based on evaluation and screening reports of the submitted articles.
         </p>
-        <p className="important">The same will be updated soon.</p>
+        {/* <p className="important">The same will be updated soon.</p> */}
       </section>
       <Footer />
     </div>

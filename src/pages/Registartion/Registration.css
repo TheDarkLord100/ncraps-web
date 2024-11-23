@@ -94,7 +94,7 @@
     padding: 20px 20px;
     margin-top: 70px;
   }
-  .bank-details-table {
+  .registration-table, .bank-details-table {
     width: 90%;
   }
 

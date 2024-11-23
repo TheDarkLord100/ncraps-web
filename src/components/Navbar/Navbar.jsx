@@ -4,19 +4,24 @@ import ditLogo from '../../assets/images/DIT.png';
 import nitLogo from '../../assets/images/nit.png';
 import mrsiLogo from '../../assets/images/newLogo.png';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleClick = (e, tabName) => {
-    e.stopPropagation(); // Prevent event from bubbling
-    // onTabClick(tabName);
-    setIsOpen(false); // Close the menu after clicking
+  const handleDropdown = (dropdownName) => {
+    setDropdownOpen(dropdownOpen === dropdownName ? null : dropdownName); // Toggle dropdown
+  };
+
+  const handleClick = (e) => {
+    e.stopPropagation();
+    setIsOpen(false);
+    setDropdownOpen(null); // Close any open dropdown
   };
 
   return (
@@ -35,34 +40,61 @@ const Navbar = () => {
       </button>
 
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <Link to="/" onClick={(e) => handleClick(e, 'Home')}>
+        <Link to="/" onClick={handleClick}>
           Home
         </Link>
-        <Link to="/about" onClick={(e) => handleClick(e, 'About')}>
+
+        <Link to="/about" onClick={handleClick}>
           About
         </Link>
-        <Link to="/dates" onClick={(e) => handleClick(e, 'Important Dates')}>
-          Important Dates
-        </Link>
-        <Link
-          to="/registration"
-          onClick={(e) => handleClick(e, 'Registrations')}
-        >
-          Registrations
-        </Link>
-        <Link to="/submission" onClick={(e) => handleClick(e, 'Submission')}>
-          Paper Submission
-        </Link>
-        <Link to="/team" onClick={(e) => handleClick(e, 'Team')}>
-          Organizing Committee
-        </Link>
-        <Link to="/advisory" onClick={(e) => handleClick(e, 'Advisory')}>
-          National Advisory
-        </Link>
-        <Link to="/speakers" onClick={(e) => handleClick(e, 'Speakers')}>
-          Speakers
-        </Link>
-        <Link to="/contact" onClick={(e) => handleClick(e, 'Contact')}>
+
+        {/* Conference Details Dropdown */}
+        <div className="dropdown">
+          <button
+            className="dropdown-toggle"
+            onClick={() => handleDropdown('conferenceDetails')}
+          >
+            Conference Details <ChevronDown />
+          </button>
+          {dropdownOpen === 'conferenceDetails' && (
+            <div className="dropdown-menu">
+              <Link to="/dates" onClick={handleClick}>
+                Important Dates
+              </Link>
+              <Link to="/registration" onClick={handleClick}>
+                Registrations
+              </Link>
+              <Link to="/submission" onClick={handleClick}>
+                Paper Submission
+              </Link>
+            </div>
+          )}
+        </div>
+
+        {/* Committees & Speakers Dropdown */}
+        <div className="dropdown">
+          <button
+            className="dropdown-toggle"
+            onClick={() => handleDropdown('committeesSpeakers')}
+          >
+            Committees & Speakers <ChevronDown />
+          </button>
+          {dropdownOpen === 'committeesSpeakers' && (
+            <div className="dropdown-menu">
+              <Link to="/team" onClick={handleClick}>
+                Organizing Committee
+              </Link>
+              <Link to="/advisory" onClick={handleClick}>
+                National Advisory
+              </Link>
+              <Link to="/speakers" onClick={handleClick}>
+                Speakers
+              </Link>
+            </div>
+          )}
+        </div>
+
+        <Link to="/contact" onClick={handleClick}>
           Contact Us
         </Link>
       </div>

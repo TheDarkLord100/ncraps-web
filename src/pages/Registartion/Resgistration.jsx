@@ -4,6 +4,15 @@ import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
+
+// {
+//   category: 'Registration fee with publication',
+//   amount: '',
+//   isHeader: true,
+// },
+// { category: 'Research Scholar', amount: '5500.00' },
+// { category: 'Faculty/Scientist/Industry Personal', amount: '7500.00' },
+
 function Registration() {
   const registrationData = [
     {
@@ -14,13 +23,7 @@ function Registration() {
     { category: 'Research Scholar', amount: '2500.00' },
     { category: 'Faculty/Scientist', amount: '3000.00' },
     { category: 'Industry Personal', amount: '3500.00' },
-    {
-      category: 'Registration fee with publication',
-      amount: '',
-      isHeader: true,
-    },
-    { category: 'Research Scholar', amount: '5500.00' },
-    { category: 'Faculty/Scientist/Industry Personal', amount: '7500.00' },
+    
   ];
 
   return (
