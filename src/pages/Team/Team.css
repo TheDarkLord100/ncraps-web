@@ -43,3 +43,21 @@
 .team-table td {
   border: none;
 }
+
+@media (max-width: 768px) {
+  .team {
+    padding: 100px 20px;
+  }
+  .team-table .name {
+    font-weight: bold;
+    width: 50%;
+    text-align: left;
+    padding-bottom: 0.75rem;
+  }
+  
+  .team-table .designation {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+}

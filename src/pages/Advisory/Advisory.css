@@ -54,4 +54,8 @@ section {
   .advisory-column {
     width: 100%; /* Full width for columns on small screens */
   }
+
+  .advisory-column li {
+    margin-left: 0;
+  }
 }
