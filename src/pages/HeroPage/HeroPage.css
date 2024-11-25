@@ -1,3 +1,10 @@
+.marquee{
+  color: red;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
 .hero {
   min-height: 100vh;
   background-image: url('../../assets/images/img_1.jpg');
