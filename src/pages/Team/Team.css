@@ -44,6 +44,14 @@
   border: none;
 }
 
+.mobile-view{
+  display: none;
+}
+
+/* .desktop-view {
+  display: block;
+} */
+
 @media (max-width: 768px) {
   .team {
     padding: 100px 20px;
@@ -52,18 +60,27 @@
     font-weight: bold;
     width: 50%;
     text-align: left;
-    padding-bottom: 0.75rem;
+    
   }
   
   .team-table .designation {
     width: 50%;
     text-align: left;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
+
   }
 
   .team-table td {
     font-size: 1rem;
     padding: 0;
     vertical-align: top;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
   }
 }
