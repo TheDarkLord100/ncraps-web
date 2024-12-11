@@ -1,16 +1,42 @@
 .countdown {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.countdown div {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.countdown-unit div:nth-child(1) {
+  color: #f1c40f;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown-unit div:nth-child(2) {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .countdown {
+    gap: 0px;
   }
   
   .countdown div {
-    background-color: #005599;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
+    padding: 10px 0px;
   }
-  
+}

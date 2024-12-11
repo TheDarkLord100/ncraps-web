@@ -97,6 +97,9 @@ const Navbar = () => {
         <Link to="/contact" onClick={handleClick}>
           Contact Us
         </Link>
+        <Link to="/places" onClick={handleClick}>
+          Places To Visit
+          </Link>
       </div>
     </nav>
   );
