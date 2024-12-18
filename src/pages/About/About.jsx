@@ -8,7 +8,6 @@ import Footer from '../../components/Footer/Footer';
 const About = () => (
   <>
     <Navbar />
-    {/* <HeroSection /> */}
     <section className="about-page">
       <div className="tabs">
         <h1>About The Conference</h1>
@@ -73,6 +72,16 @@ const About = () => (
           consultation with experts from industry and academia to match the
           highest standards of the best institutes across the globe. We foster
           our students with a strong foundation.
+        </p>
+
+        <h2>About DIT University</h2>
+        <p>Established in 1998 by Late Shri Naveen Agarwal, DIT University in Dehradun, 
+          Uttarakhand, has grown into a leading institution recognized for its 
+          vision “Imagine Aspire Achieve.” Spread across 21 acres, it offers 
+          world-class infrastructure and a diverse range of programs in engineering, 
+          sciences, humanities, and more. With a focus on innovation, research, and 
+          a global outlook, DIT University empowers students with the skills to excel 
+          in their careers and make a meaningful impact on society.
         </p>
 
         <h2>About NIT Uttarakhand</h2>
