@@ -3,24 +3,14 @@
         "location": "Dehradun",
         "places": [
             {
-                "name": "Robber’s Cave (Guchhupani)",
-                "description": "Robber’s Cave, locally known as Guchhupani, is a natural cave formation located 8 km from Dehradun. It is a favorite picnic spot and adventure site, attracting both locals and tourists. The cave features a natural stream of cold water, creating a serene environment. It is said to have been a hideout for robbers during the British era.",
-                "image": "/assets/robbers.webp"
-            },
-            {
-                "name": "Sahastradhara",
-                "description": "Sahastradhara, meaning 'thousand-fold spring,' is a natural marvel located 14 km from Dehradun. Known for its therapeutic sulphur water springs, it is believed to have medicinal properties. Visitors can bathe in the cool water pools or enjoy a ropeway ride for a bird’s-eye view of the area.",
-                "image": "/assets/sahastradhara.jpg"
-            },
-            {
-                "name": "Tapovan Ashram",
-                "description": "Tapovan Ashram is a tranquil retreat located on the outskirts of Dehradun, surrounded by lush greenery. It is a significant spiritual hub where visitors can meditate and practice yoga. The ashram's peaceful atmosphere makes it a haven for those seeking mental clarity and solace. Mythologically, Tapovan is associated with Guru Dronacharya, where he is believed to have meditated. It is an ideal destination for those interested in spiritual growth and learning about ancient Indian traditions.",
-                "image": "/assets/tapovan.jpg"
-            },
-            {
                 "name": "Forest Research Institute (FRI)",
                 "description": "The Forest Research Institute (FRI) is an iconic landmark renowned for its architectural grandeur. Built in 1929, it houses six museums showcasing forestry and natural history. The expansive campus and lush greenery make it a favorite spot for nature walks and photography.",
                 "image": "/assets/fri.jpg"
+            },
+            {
+                "name": "Lacchiwala Nature Park",
+                "description": "Located a few kilometers from Dehradun, Lacchiwala Nature Park is a serene getaway featuring man-made pools, surrounded by dense forests. It is an excellent location for a refreshing dip, leisurely walks, or birdwatching. The park’s tranquil setting offers a perfect escape from city life, making it a preferred destination for families and nature lovers. The sunsets here are particularly captivating, adding to its charm.",
+                "image": "/assets/lachhiwala.jpg"
             },
             {
                 "name": "Malsi Deer Park (Dehradun Zoo)",
@@ -33,14 +23,24 @@
                 "image": "/assets/monastry.jpg"
             },
             {
-                "name": "Lacchiwala Nature Park",
-                "description": "Located a few kilometers from Dehradun, Lacchiwala Nature Park is a serene getaway featuring man-made pools, surrounded by dense forests. It is an excellent location for a refreshing dip, leisurely walks, or birdwatching. The park’s tranquil setting offers a perfect escape from city life, making it a preferred destination for families and nature lovers. The sunsets here are particularly captivating, adding to its charm.",
-                "image": "/assets/lachhiwala.jpg"
+                "name": "Robber’s Cave (Guchhupani)",
+                "description": "Robber’s Cave, locally known as Guchhupani, is a natural cave formation located 8 km from Dehradun. It is a favorite picnic spot and adventure site, attracting both locals and tourists. The cave features a natural stream of cold water, creating a serene environment. It is said to have been a hideout for robbers during the British era.",
+                "image": "/assets/robbers.webp"
+            },
+            {
+                "name": "Sahastradhara",
+                "description": "Sahastradhara, meaning 'thousand-fold spring,' is a natural marvel located 14 km from Dehradun. Known for its therapeutic sulphur water springs, it is believed to have medicinal properties. Visitors can bathe in the cool water pools or enjoy a ropeway ride for a bird’s-eye view of the area.",
+                "image": "/assets/sahastradhara.jpg"
             },
             {
                 "name": "Tapkeshwar Temple",
                 "description": "Tapkeshwar Temple, dedicated to Lord Shiva, is located inside a natural cave. The temple is unique for its continuous water droplets falling over the Shiva Lingam. The serene surroundings and spiritual aura attract pilgrims and tourists alike.",
                 "image": "/assets/tapkeshwar.jpg"
+            },
+            {
+                "name": "Tapovan Ashram",
+                "description": "Tapovan Ashram is a tranquil retreat located on the outskirts of Dehradun, surrounded by lush greenery. It is a significant spiritual hub where visitors can meditate and practice yoga. The ashram's peaceful atmosphere makes it a haven for those seeking mental clarity and solace. Mythologically, Tapovan is associated with Guru Dronacharya, where he is believed to have meditated. It is an ideal destination for those interested in spiritual growth and learning about ancient Indian traditions.",
+                "image": "/assets/tapovan.jpg"
             }
         ]
     },
