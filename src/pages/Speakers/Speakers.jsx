@@ -56,11 +56,6 @@ const Speakers = () => {
               <li key={index}>{speaker}</li>
             ))}
           </ul>
-          {/* <ul className="speakers-column">
-            {secondHalf.map((speaker, index) => (
-              <li key={index}>{speaker}</li>
-            ))}
-          </ul> */}
         </div>
       </section>
       <Footer />

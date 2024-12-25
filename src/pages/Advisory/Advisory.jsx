@@ -52,8 +52,6 @@ function Advisory() {
   ];
 
   const half = Math.ceil(advisoryMembers.length / 2); // Split the array into two halves
-  const firstHalf = advisoryMembers.slice(0, half);
-  const secondHalf = advisoryMembers.slice(half);
 
   return (
     <>
@@ -67,11 +65,6 @@ function Advisory() {
               <li key={index}>{member}</li>
             ))}
           </ul>
-          {/* <ul className="advisory-column">
-            {secondHalf.map((member, index) => (
-              <li key={index}>{member}</li>
-            ))}
-          </ul> */}
         </div>
       </section>
       <Footer />

@@ -1,6 +1,30 @@
 .places-section {
-    padding: 100px 20px; /* Reduced horizontal padding for smaller screens */
+    position: relative;
+    /* Required for positioning the overlay */
+    padding: 100px 20px;
+    background-image: url('../../assets/images/back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1;
+    color: #000;
+    /* Ensures text is visible */
     text-align: center;
+}
+
+.places-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white overlay */
+    z-index: -1;
+    /* Keeps overlay behind the content */
 }
 
 .places-section iframe {
@@ -18,7 +42,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.transport-info h2, .places-section h1 {
+.transport-info h2,
+.places-section h1 {
     margin-bottom: 10px;
     font-size: 1.8rem;
     color: #333;
@@ -44,18 +69,20 @@
 .place {
     display: flex;
     /* flex-direction: column; Make layout vertical */
-    align-items: start; /* Center align content */
+    align-items: start;
+    /* Center align content */
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* Add spacing between image and text */
+    gap: 20px;
+    /* Add spacing between image and text */
 }
 
 .place img {
-    width: 100%; 
+    width: 100%;
     max-width: 400px;
     /* height: 100%;  */
     object-fit: cover;
@@ -73,10 +100,11 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
-    text-align: left; /* Center-align text */
+    text-align: left;
+    /* Center-align text */
 }
 
-.places-data{
+.places-data {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -87,37 +115,48 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .places-section {
-        padding: 50px 20px; /* Reduce padding on smaller screens */
+        padding: 50px 20px;
+        /* Reduce padding on smaller screens */
     }
 
-    .transport-info h2, .places-section h1 {
-        font-size: 1.6rem; /* Smaller font for headings */
+    .transport-info h2,
+    .places-section h1 {
+        font-size: 1.6rem;
+        /* Smaller font for headings */
     }
 
     .places-to-visit h2 {
-        font-size: 1.6rem; /* Adjust heading font size */
+        font-size: 1.6rem;
+        /* Adjust heading font size */
     }
 
     .place img {
-        max-width: 300px; /* Adjust image size for smaller screens */
+        max-width: 300px;
+        /* Adjust image size for smaller screens */
     }
 
     .place h3 {
-        font-size: 1.3rem; /* Reduce font size */
+        font-size: 1.3rem;
+        /* Reduce font size */
     }
 
     .place p {
-        font-size: 0.95rem; /* Adjust paragraph font size */
+        font-size: 0.95rem;
+        /* Adjust paragraph font size */
     }
 }
 
 @media (max-width: 480px) {
     .place {
-        flex-direction: column; /* Make layout vertical */
-        align-items: center; /* Center align content */
+        flex-direction: column;
+        /* Make layout vertical */
+        align-items: center;
+        /* Center align content */
     }
+
     .place img {
-        max-width: 100%; /* Full width on very small screens */
+        max-width: 100%;
+        /* Full width on very small screens */
     }
 
     .place h3 {

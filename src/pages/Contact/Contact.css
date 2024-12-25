@@ -5,8 +5,27 @@ section {
 }
 
 .contact {
+  position: relative; /* Required for positioning the overlay */
   padding: 170px 100px;
-  min-height: 65vh;
+  background-image: url('../../assets/images/back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 1;
+  color: #000; /* Ensures text is visible */
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+  z-index: -1; /* Keeps overlay behind the content */
 }
 
 .contact h1 {
@@ -36,7 +55,6 @@ section {
 
 .contact ul .inner li {
   text-align: left;
-  background-color: #fff;
 }
 
 .contact ul .inner p {
