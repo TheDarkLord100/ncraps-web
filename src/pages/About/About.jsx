@@ -1,8 +1,6 @@
 import React from 'react';
-import './About.css';
-import brochure from '../../assets/Brochure.pdf'; // Replace with your brochure's file path
+import './About.css';// Replace with your brochure's file path
 import Navbar from '../../components/Navbar/Navbar';
-// import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 
 const About = () => (

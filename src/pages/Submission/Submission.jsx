@@ -3,7 +3,7 @@ import './Submission.css';
 import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import paperTemplate from '../../assets/NCRAPS25_paper_template.docx';
-import brochure from '../../assets/Brochure.pdf';
+import brochure from '../../assets/brochure.pdf';
 import template from '../../assets/Abstract_template.docx';
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -33,6 +33,11 @@ function Submission() {
           <li>
             <a href={brochure} download className="download-link">
               Brochure
+            </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/41R9MLE" target= "_blank" className="download-link">
+              Abstract Submission Link
             </a>
           </li>
         </ul>

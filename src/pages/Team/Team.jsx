@@ -17,7 +17,7 @@ const teamData = {
         "Prof. G. Raghurama": {
             "designation": "Vice-Chancellor, DIT University"
         },
-        "Prof. B V Ramana Reddy": {
+        "Prof. K.K. Shukla": {
             "designation": "I/C Director, NIT Uttarakhand"
         }
     },
@@ -101,7 +101,9 @@ function Team() {
         <>
             <Navbar />
             <section className="team">
-                <h1>Organizing Committee</h1>
+                <div className="team-header">
+                    <h1>Organizing Committee</h1>
+                </div>
                 <div className="main-cnt">
                     {Object.entries(teamData).map(([section, members]) => (
                         <div className="team-sections" key={section}>
@@ -118,10 +120,12 @@ function Team() {
                                                     <td className="designation">{details.designation}</td>
                                                 </tr>
                                             </div>
-                                                <tr key={name} className="desktop-view">
+                                            <div className="desktop-view">
+                                                <tr key={name} className="team-row">
                                                     <td className="name">{name}</td>
                                                     <td className="designation">{details.designation}</td>
                                                 </tr>
+                                            </div>
                                         </>
                                     ))}
                                 </tbody>
@@ -134,6 +138,5 @@ function Team() {
         </>
     );
 }
-
 
 export default Team;

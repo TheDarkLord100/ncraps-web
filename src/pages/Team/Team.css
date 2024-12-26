@@ -1,6 +1,6 @@
 .team {
-  position: relative; /* Required for positioning the overlay */
-  padding: 100px 100px;
+  position: relative;
+  padding: 100px 50px;
   background-image: url('../../assets/images/back.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -8,8 +8,8 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   z-index: 1;
-  color: #000; /* Ensures text is visible */
-  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
 }
 
 .team::before {
@@ -19,88 +19,109 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  z-index: -1; /* Keeps overlay behind the content */
+  background-color: rgba(255, 255, 255, 0.8); /* Light overlay for better text visibility */
+  z-index: -1;
 }
 
-.team h1 {
-  text-align: left;
-  margin-bottom: 1.25rem;
-  font-size: 2rem;
+.team-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004080;
+}
+
+.team-header p {
+  font-size: 1.25rem;
+  color: #555;
 }
 
 .team-sections {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.6); /* Subtle background for sections */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .team-sections h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: #004080;
+  border-bottom: 2px solid #cce7ff;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .team-table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.team-row:hover {
+  background-color: rgba(0, 128, 255, 0.05); /* Subtle hover effect */
 }
 
 .team-table td {
-  font-size: 1.25rem;
-  padding: 0 1.25rem;
-  vertical-align: top;
+  font-size: 1rem;
+  padding: 10px 15px;
 }
 
 .team-table .name {
-  font-weight: bold;
-  width: 20%;
+  font-weight: 600;
+  color: #004080;
+  width: 300px;
   text-align: left;
 }
 
 .team-table .designation {
+  color: #000;
   width: 50%;
   text-align: left;
-}
-
-.team-table td {
-  border: none;
 }
 
 .mobile-view{
   display: none;
 }
 
-/* .desktop-view {
-  display: block;
-} */
-
 @media (max-width: 768px) {
   .team {
     padding: 100px 20px;
   }
-  .team-table .name {
-    font-weight: bold;
-    width: 50%;
-    text-align: left;
-    
-  }
-  
-  .team-table .designation {
-    width: 50%;
-    text-align: left;
-    padding-bottom: 0.75rem;
 
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-header p {
+    font-size: 1rem;
+  }
+
+  .team-sections h3 {
+    font-size: 1.5rem;
   }
 
   .team-table td {
-    font-size: 1rem;
-    padding: 0;
-    vertical-align: top;
+    font-size: 0.9rem;
+    padding: 8px 10px;
   }
 
-  .desktop-view {
+  .desktop-view{
     display: none;
   }
 
-  .mobile-view {
+  .mobile-view{
     display: block;
+  }
+
+  .mobile-view .name {
+    padding-bottom: 0px;
+  }
+
+  .mobile-view .designation {
+    padding-top: 0px;
   }
 }
