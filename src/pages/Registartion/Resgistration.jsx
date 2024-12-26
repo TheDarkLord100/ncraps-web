@@ -49,6 +49,16 @@ function Registration() {
             Register
           </a>
         </h3>
+        <h3>
+          LINK FOR ABSTRACT SUBMISSION:{' '}
+          <a
+            href="https://bit.ly/41R9MLE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Submit Abstract
+          </a>
+        </h3>
         <table className="registration-table">
           <thead>
             <tr>

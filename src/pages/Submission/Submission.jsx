@@ -35,11 +35,6 @@ function Submission() {
               Brochure
             </a>
           </li>
-          <li>
-            <a href="https://bit.ly/41R9MLE" target= "_blank" className="download-link">
-              Abstract Submission Link
-            </a>
-          </li>
         </ul>
         <p className="important">
           <span>**</span>The proposal is submitted to Springer for a possible publication in a Scopus Indexed Book series. 

@@ -62,7 +62,7 @@ const Navbar = () => {
                 Important Dates
               </Link>
               <Link to="/registration" onClick={handleClick}>
-                Registrations
+                Important Links
               </Link>
               <Link to="/submission" onClick={handleClick}>
                 Paper Submission
