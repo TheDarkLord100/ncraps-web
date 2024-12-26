@@ -3,7 +3,7 @@ import './Submission.css';
 import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import paperTemplate from '../../assets/NCRAPS25_paper_template.docx';
-import brochure from '../../assets/brochure.pdf';
+import brochure from '../../assets/bro.pdf';
 import template from '../../assets/Abstract_template.docx';
 import Navbar from '../../components/Navbar/Navbar';
 
