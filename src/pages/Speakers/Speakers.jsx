@@ -4,58 +4,60 @@ import HeroSection from '../HeroPage/HeroPage';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
+const speakers = [
+  { name: 'Prof. Kamal K Kar', place: 'IIT Kanpur', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Sevi Murugavel', place: 'University of Delhi, Delhi', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Ramesh Chandra', place: 'IIT Roorkee', image: '/assets/malsi.jpg' },
+  { name: 'Prof. K.K. Bamzai', place: 'University of Jammu, Kashmir', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Rajesh Punia', place: 'M.D. University, Rohtak', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Puneet Sharma', place: 'IILM University, Greater Noida', image: '/assets/malsi.jpg' },
+  { name: 'Prof. P. G. Siddheshwar', place: 'CHRIST University, Bangalore', image: '/assets/malsi.jpg' },
+  { name: 'Prof. G. P. Raja Sekhara', place: 'IIT Kharagpur, Kharagpur', image: '/assets/malsi.jpg' },
+  { name: 'Prof. PVSN Murthy', place: 'IIT Kharagpur, Kharagpur', image: '/assets/malsi.jpg' },
+  { name: 'Prof. B.S. Bhadauria', place: 'BBAU, Lucknow', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Sandeep Banerjee', place: 'IIT Roorkee', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Ameeya K Nayak', place: 'IIT Roorkee', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Rajesh Kumar Pandey', place: 'IIT-BHU, Varanasi', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Vineet Kumar Singh', place: 'IIT-BHU, Varanasi', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Rajiv Kumar', place: 'IIT-BHU, Varanasi', image: '/assets/malsi.jpg' },
+  { name: 'Prof. U. P. Singh', place: 'IIT, Roorkee', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Om Prakash', place: 'GBPUAT, Pantnagar', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Shailey Singhal', place: 'UPES, Dehradun', image: '/assets/malsi.jpg' },
+  { name: 'Prof. S.K. Pandey', place: 'Banaras Hindu University, Varanasi', image: '/assets/malsi.jpg' },
+  { name: 'Prof. Amjad Ali', place: 'Thapar University, Patiala', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Vineet Kumar', place: 'FRI (Deemed to be) University, Dehradun', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Raj Kumar', place: 'Indian Institute of Petroleum, Dehradun', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Sivaraj R', place: 'NIT Jalandhar', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Subash Chandra Martha', place: 'IIT Ropar', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Ashok Kumar', place: 'H.N.B. Garhwal University, Srinagar', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Sajjan Dahiya', place: 'M.D. University, Rohtak', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Avneesh Chaturvedi', place: 'University of Allahabad, Prayagraj', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Triloki Nath', place: 'D.D.U. Gorakhpur University, Gorakhpur', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Punam Gupta', place: 'Devi Ahilya Vishwavidyalaya, Indore', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Pratima Rai', place: 'University of Delhi, Delhi', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Pankaj Kumar Mishra', place: 'CUSB, Gaya', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Haredra Singh', place: 'P.G. College, Gazipur, U.P.', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Ratnesh Kumar Mishra', place: 'NIT Jamshedpur', image: '/assets/malsi.jpg' },
+  { name: 'Dr. Amit Singh', place: 'REC, Ambedkar Nagar, U.P.', image: '/assets/malsi.jpg' },
+];
+
 const Speakers = () => {
-  const speakers = [
-    'Prof. Kamal K Kar, IIT Kanpur',
-    'Prof. Sevi Murugavel, University of Delhi, Delhi',
-    'Prof. Ramesh Chandra, IIT Roorkee',
-    'Prof. K.K. Bamzai, University of Jammu, Kashmir',
-    'Prof. Rajesh Punia, M.D. University, Rohtak',
-    'Prof. Puneet Sharma, IILM University, Greater Noida',
-    'Prof. P. G. Siddheshwar, CHRIST University, Bangalore',
-    'Prof. G. P. Raja Sekhara, IIT Kharagpur, Kharagpur',
-    'Prof. PVSN Murthy, IIT Kharagpur, Kharagpur',
-    'Prof. B.S. Bhadauria, BBAU, Lucknow',
-    'Prof. Sandeep Banerjee, IIT Roorkee',
-    'Prof. Ameeya K Nayak, IIT Roorkee',
-    'Prof. Sandeep Banerjee, IIT Roorkee',
-    'Prof. Rajesh Kumar Pandey, IIT-BHU, Varanasi',
-    'Prof. Vineet Kumar Singh, IIT-BHU, Varanasi',
-    'Prof. Rajiv Kumar, IIT-BHU, Varanasi',
-    'Prof. U. P. Singh, IIT, Roorkee',
-    'Prof. Om Prakash, GBPUAT, Pantnagar',
-    'Prof. Shailey Singhal, UPES, Dehradun',
-    'Prof. S.K. Pandey, Banaras Hindu University, Varanasi',
-    'Prof. Amjad Ali, Thapar University, Patiala',
-    'Dr. Vineet Kumar, FRI (Deemed to be) University, Dehradun',
-    'Dr. Raj Kumar, Indian Institute of Petroleum, Dehradun',
-    'Dr. Sivaraj R, NIT Jalandhar',
-    'Dr. Subash Chandra Martha, IIT Ropar',
-    'Dr. Ashok Kumar, H.N.B. Garhwal University, Srinagar',
-    'Dr. Sajjan Dahiya, M.D. University, Rohtak',
-    'Dr. Avneesh Chaturvedi, University of Allahabad, Prayagraj',
-    'Dr. Triloki Nath, D.D.U. Gorakhpur University, Gorakhpur',
-    'Dr. Punam Gupta, Devi Ahilya Vishwavidyalaya, Indore',
-    'Dr. Pratima Rai, University of Delhi, Delhi',
-    'Dr. Pankaj Kumar Mishra, CUSB, Gaya',
-    'Dr. Haredra Singh, P.G. College, Gazipur, U.P.',
-    'Dr. Ratnesh Kumar Mishra, NIT Jamshedpur',
-    'Dr. Amit Singh, REC, Ambedkar Nagar, U.P.',
-  ];
-
-
   return (
     <>
       <Navbar />
-      {/* <HeroSection /> */}
       <section className="speakers">
         <h1>Tentative Speakers</h1>
         <div className="speakers-container">
-          <ul className="speakers-column">
-            {speakers.map((speaker, index) => (
-              <li key={index}>{speaker}</li>
-            ))}
-          </ul>
+          {speakers.map((speaker, index) => (
+            <div key={index} className="speaker-card">
+              <img src={speaker.image} alt={speaker.name} className="speaker-image" />
+              <div className="speaker-details">
+                <span className="speaker-name">{speaker.name}</span>
+                <br />
+                <span className="speaker-place">{speaker.place}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />

@@ -1,20 +1,14 @@
-section {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
 .contact {
-  position: relative; /* Required for positioning the overlay */
-  padding: 170px 100px;
+  position: relative;
+  padding: 100px 50px;
   background-image: url('../../assets/images/back.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 80vh;
+  color: #000;
   z-index: 1;
-  color: #000; /* Ensures text is visible */
 }
 
 .contact::before {
@@ -24,41 +18,53 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  z-index: -1; /* Keeps overlay behind the content */
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 
 .contact h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-card li{
+  list-style: none;
+}
+
+.contact-name {
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 20px 0 10px 0;
+  margin-bottom: 10px;
+}
+
+.contact-phone {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
 }
 
 .contact h3 {
-  margin-left: 10px;
-  padding: 10px 0;
-  font-weight: 600;
+  margin-top: 30px;
   font-size: 1.3rem;
-}
-
-.contact ul {
-  display: flex;
-  flex-direction: row;
-  gap:40px;
-}
-
-.contact ul .inner {
-  margin-left: 10px;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-.contact ul .inner li {
-  text-align: left;
-}
-
-.contact ul .inner p {
-  margin-left: 10px;
+  text-align: center;
 }
 
 .email-link {
@@ -73,13 +79,25 @@ section {
 
 @media screen and (max-width: 768px) {
   .contact {
-    padding: 20px 20px;
-    margin-top: 70px;
-    min-height: 70vh;
+    padding: 50px 20px;
+    min-height: auto;
   }
-  .contact ul {
+
+  .contacts-container {
     flex-direction: column;
     gap: 20px;
   }
-  
+
+  .contact-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact h3 {
+    font-size: 1.1rem;
+  }
 }
