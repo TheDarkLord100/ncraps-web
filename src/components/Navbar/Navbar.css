@@ -1,6 +1,6 @@
 .navbar {
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -124,6 +124,10 @@
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 0;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
   }
 
   .nav-links.active {
