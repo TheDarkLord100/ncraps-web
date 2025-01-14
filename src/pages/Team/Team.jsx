@@ -77,18 +77,6 @@ const teamData = {
         }
     },
     "Website Development": {
-        "Rudraksh Gupta": {
-            "designation": "3rd Year B.Tech CSE",
-            "affiliation": "DIT University"
-        },
-        "Tanya Singhal": {
-            "designation": "4th Year B.Tech CSE",
-            "affiliation": "DIT University"
-        },
-        "Harsheet Sharma": {
-            "designation": "4th Year B.Tech CSE",
-            "affiliation": "DIT University"
-        },
         "Vijayant Singh": {
             "designation": "4th Year B.Tech CSE",
             "affiliation": "DIT University"
