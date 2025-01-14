@@ -14,8 +14,8 @@
 }
 
 .footer-logos img {
-  width: 60px;
-  height: auto;
+  height: 60px;
+  /* height: auto; */
 }
 
 .footer-text p {

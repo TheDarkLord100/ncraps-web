@@ -31,7 +31,9 @@ const HeroSection = () => {
                 <p className="association-with">
                   <span>In association with</span>
                   <br />
-                  MRSI, Delhi Chapter
+                  MRSI, Delhi Chapter <span>&</span>
+                  <br />
+                  ISDT, DRDO
                 </p>
                 <p className="date">14 – 15 February 2025</p>
                 <Countdown />

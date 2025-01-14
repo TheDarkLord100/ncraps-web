@@ -4,6 +4,7 @@ import ditlogo from '../../assets/images/dit.jpg';
 import nitlogo from '../../assets/images/nit.png';
 import mrsilogo from '../../assets/images/MRSI-Logo.png';
 import ncrasps from '../../assets/images/NCRAPSLogo.jpeg';
+import ISDT from '../../assets/images/isdt.png';
 
 const Footer = () => {
   return (
@@ -13,6 +14,7 @@ const Footer = () => {
         <img src={nitlogo} alt="Logo 2" />
         <img src={ncrasps} alt="Logo 3" />
         <img src={mrsilogo} alt="Logo 4" />
+        <img src={ISDT} alt="Logo 5" />
       </div>
       <div className="footer-text">
         <p>DIT UNIVERSITY</p>
