@@ -15,7 +15,6 @@
 
 .footer-logos img {
   height: 60px;
-  /* height: auto; */
 }
 
 .footer-text p {
@@ -41,10 +40,7 @@
 
 @media (max-width: 768px) {
   .footer-logos {
-    /* display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-bottom: 15px; */
+    
     width: 100%;
     gap: 30px;
   }
