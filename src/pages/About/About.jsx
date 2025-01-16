@@ -73,27 +73,32 @@ const About = () => (
         </p>
 
         <h2>About DIT University</h2>
-        <p>Established in 1998 by Late Shri Naveen Agarwal, DIT University in Dehradun, 
-          Uttarakhand, has grown into a leading institution recognized for its 
-          vision “Imagine Aspire Achieve.” Spread across 21 acres, it offers 
-          world-class infrastructure and a diverse range of programs in engineering, 
-          sciences, humanities, and more. With a focus on innovation, research, and 
-          a global outlook, DIT University empowers students with the skills to excel 
+        <p>Established in 1998 by Late Shri Naveen Agarwal, DIT University in Dehradun,
+          Uttarakhand, has grown into a leading institution recognized for its
+          vision “Imagine Aspire Achieve.” Spread across 21 acres, it offers
+          world-class infrastructure and a diverse range of programs in engineering,
+          sciences, humanities, and more. With a focus on innovation, research, and
+          a global outlook, DIT University empowers students with the skills to excel
           in their careers and make a meaningful impact on society.
         </p>
 
         <h2>About NIT Uttarakhand</h2>
         <p>
-          National Institute of Technology Uttarakhand is among the 10 newly
-          established NITs, located in the hilly terrain of Srinagar (Garhwal)
-          on the bank of the Alaknanda River. NIT Uttarakhand was established in
-          2009 under the Act of Parliament of India by the Ministry of Human
-          Resource Development and designated with the status of “Institute of
-          National Importance”. NIT Uttarakhand is functional at Seed Campus,
-          Srinagar, Pauri Garhwal, Uttarakhand. The institute has made rapid
-          growth in recent years in terms of starting new academic programs,
-          revision of academic curriculum, and development of laboratories and
-          infrastructure.
+          National Institute of Technology Uttarakhand- one of the thirty-one Institutes of National 
+          Importance in the country, abides by the afore-mentioned principle by constantly providing 
+          an encouraging environment for education and training of technical professionals as well as 
+          grooming the skills of the students through impeccable learning courses.
+          <br />
+          NIT UK established in 2009 under the Act of Parliament by the Ministry of Education 
+          (Shiksha Mantralaya), NITUK is the Technical Education Hub in the Green and Clean lap 
+          of the Himalayas, precisely located in the Land of the Gods (known as Dev Bhoomi), 
+          the state of Uttarakhand. With a peaceful and serene atmosphere that environs the institute, 
+          the students are motivated to achieve academic and technical excellence in the streams of their 
+          choice. The Institute admits students to B. Tech. in Civil Engineering, Computer Science and 
+          Engineering, Electronics and Communication Engineering, Electrical and Electronics Engineering, 
+          and Mechanical Engineering through JEE Mains (formerly known as AIEEE) and to M. Tech. in all 
+          Engineering programmes through GATE. The Institute also offers Ph. D. in the streams of Engineering, 
+          Sciences, and Humanities.
         </p>
 
         <h2>About MRSI Delhi Chapter</h2>

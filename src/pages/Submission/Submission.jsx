@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import paperTemplate from '../../assets/NCRAPS25_paper_template.docx';
 import brochure from '../../assets/bro_updated.pdf';
-import template from '../../assets/Abstract_template.docx';
+import template from '../../assets/abstract.docx';
 
 const Submission = () => {
   const resources = [

@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="main">
               <div className="main-content">
                 <marquee className="marquee" behavior="scroll" direction="left">
-                  *Participants with valid reasons may be allowed to present their work online at NCRAPS 2025 upon request.*
+                  *The Abstract submission deadline for NCRAPS-2025 has been extended to 25th January, 2025. Kindly submit at the earliest.*
                 </marquee>
                 <h3 className="top">6th National Conference</h3>
                 <h3>On</h3>
