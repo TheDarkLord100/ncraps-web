@@ -36,6 +36,7 @@ const About = () => (
           <li className="list">
             Computational Materials Science, Computational Physics
           </li>
+          <li className="list">Semiconductor devices</li>
           <li className="list">Electronic, Transport and Optical Properties</li>
           <li className="list">
             Materials for Energy and Societal Applications
