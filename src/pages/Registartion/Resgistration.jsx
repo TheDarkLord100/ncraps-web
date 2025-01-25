@@ -16,14 +16,23 @@ import Navbar from '../../components/Navbar/Navbar';
 function Registration() {
   const registrationData = [
     {
-      category: 'Registration fee for participation',
+      category: 'Registration fee for Physical participation',
       amount: '',
       isHeader: true,
     },
     { category: 'Research Scholar', amount: '2500.00' },
     { category: 'Faculty/Scientist', amount: '3000.00' },
     { category: 'Industry Personal', amount: '3500.00' },
-    
+    {category: 'UG/PG Student', amount: '1000.00'},
+    {
+      category: 'Registration fee for Virtual participation',
+      amount: '',
+      isHeader: true,
+    },
+    { category: 'Research Scholar', amount: '1200.00' },
+    { category: 'Faculty/Scientist', amount: '1500.00' },
+    { category: 'Industry Personal', amount: '1800.00' },
+    {category: 'UG/PG Student', amount: '800.00'},
   ];
 
   return (

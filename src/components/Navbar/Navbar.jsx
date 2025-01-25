@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import ditLogo from '../../assets/images/DIT.png';
 import nitLogo from '../../assets/images/nit.png';
-import mrsiLogo from '../../assets/images/newLogo.png';
-import ISDT from '../../assets/images/isdt.png';
+import ucost from '../../assets/ucost.png';
+import nrf from '../../assets/serb.png';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
@@ -30,8 +30,8 @@ const Navbar = () => {
       <div className="logo-container">
         <img src={ditLogo} alt="DIT Logo" className="logo" />
         <img src={nitLogo} alt="NIT Logo" className="logo" />
-        <img src={mrsiLogo} alt="MRSI Logo" className="logo" />
-        <img src={ISDT} alt="ISDT Logo" className="logo" />
+        <img src={nrf} alt="MRSI Logo" className="logo" />
+        <img src={ucost} alt="ISDT Logo" className="logo" />
       </div>
       <button
         className="menu-toggle"
