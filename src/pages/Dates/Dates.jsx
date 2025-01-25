@@ -7,7 +7,7 @@ const importantDates = [
   { label: 'Abstract Submission Start', date: 'October 25, 2024' },
   { label: 'Last date for Abstract Submission', date: 'January 30, 2025' },
   { label: 'Notification for Acceptance of Abstract', date: 'January 30, 2025' },
-  { label: 'Last date for Online Registration', date: 'January 30, 2025' },
+  { label: 'Last date for Online Registration', date: 'January 31, 2025' },
   { label: 'Last date for Accommodation Requests', date: 'February 5, 2025' },
   { label: 'Conference Date', date: 'February 14-15, 2025' },
 ];
