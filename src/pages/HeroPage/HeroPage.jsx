@@ -18,7 +18,7 @@ const HeroSection = () => {
               </marquee>
               <p className="association-with">
                 <br />
-                ANRF, New Delhi <span>,</span>
+                SERB-ANRF, New Delhi <span>,</span>
                 <br />
                 UCOST, Uttarakhand <span>&</span>
                 <br />

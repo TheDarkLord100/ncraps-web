@@ -64,10 +64,10 @@ const Navbar = () => {
                 Important Dates
               </Link>
               <Link to="/registration" onClick={handleClick}>
-                Important Links
+                Registration Links
               </Link>
               <Link to="/submission" onClick={handleClick}>
-                Paper Submission
+                Download
               </Link>
             </div>
           )}
