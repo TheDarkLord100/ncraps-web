@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className="main">
             <div className="main-content">
               <marquee className="marquee" behavior="scroll" direction="left">
-                *This is to inform you all that some selected papers will be published in SCIE and SCOPUS indexed Journal. For more details, go to publication tab*
+                This is to inform you all that some selected papers will be published in SCIE and SCOPUS indexed Journal. For more details, go to publication tab.
               </marquee>
               <p className="association-with">
                 <br />
