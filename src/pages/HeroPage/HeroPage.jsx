@@ -14,9 +14,11 @@ const HeroSection = () => {
           <div className="main">
             <div className="main-content">
               <marquee className="marquee" behavior="scroll" direction="left">
-                *The Abstract submission deadline for NCRAPS-2025 has been extended to 30th January, 2025. Kindly submit at the earliest.*
+                *This is to inform you all that some selected papers will be published in SCIE and SCOPUS indexed Journal. For more details *
               </marquee>
               <p className="association-with">
+                <br />
+              DRDO, New Delhi <span>,</span>
                 <br />
                 SERB-ANRF, New Delhi <span>,</span>
                 <br />

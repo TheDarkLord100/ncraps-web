@@ -129,6 +129,10 @@
   .logo-container {
     gap: 0.5rem;
   }
+  .logo {
+    height: 25px;
+    width: auto;
+  }
 
   .nav-links.active {
     display: flex;

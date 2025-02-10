@@ -10,6 +10,7 @@ import Contact from './pages/Contact/Contact';
 import PlacesToVisit from './pages/Places/Places';
 import './App.css';
 import HeroSection from './pages/HeroPage/HeroPage';
+import Publish from './pages/publish/publish';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/advisory" element={<Advisory />} />
         <Route path="/contact" element={<Contact />} />
         <Route path='/places' element={<PlacesToVisit />} />
+        <Route path='/publish' element={<Publish />} />
       </Routes>
     </Router>
   );

@@ -3,7 +3,7 @@ import './Navbar.css';
 import ditLogo from '../../assets/images/DIT.png';
 import nitLogo from '../../assets/images/nit.png';
 import ucost from '../../assets/ucost.png';
-import nrf from '../../assets/serb.png';
+import nrf from '../../assets/anrf.png';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
@@ -49,7 +49,9 @@ const Navbar = () => {
         <Link to="/about" onClick={handleClick}>
           About
         </Link>
-
+        <Link to="/publish" onClick={handleClick}>
+          Publication
+        </Link>
         {/* Conference Details Dropdown */}
         <div className="dropdown">
           <button

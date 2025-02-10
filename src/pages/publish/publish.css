@@ -1,0 +1,42 @@
+.publish-page {
+    padding-top:5rem;
+    background-color: #ffffff;
+    position: relative;
+    background-image: url('../../assets/images/back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1;
+    color: #000;
+  }
+
+  .publish-page .important{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .publish-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+    z-index: -1; /* Keeps overlay behind the content */
+  }
+  
+  .tabs {
+    padding: 1.25rem 6.25rem;
+    border-radius: 0.5rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .tabs, .publish-page .important {
+      padding: 1.25rem 1.25rem;
+    }
+    
+  }
