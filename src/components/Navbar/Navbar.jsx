@@ -49,7 +49,7 @@ const Navbar = () => {
         <Link to="/about" onClick={handleClick}>
           About
         </Link>
-        <Link to="/publish" onClick={handleClick}>
+        <Link to="/publish" onClick={handleClick} style={{ color: 'red', fontWeight: 'bold' }}>
           Publication
         </Link>
         {/* Conference Details Dropdown */}

@@ -3,6 +3,7 @@ import './HeroPage.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Countdown from '../../components/Countdown/Countdown';
 import NCRAPS from '../../assets/images/NCRAPSLogo.jpeg';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 
@@ -14,11 +15,14 @@ const HeroSection = () => {
           <div className="main">
             <div className="main-content">
               <marquee className="marquee" behavior="scroll" direction="left">
-                This is to inform you all that some selected papers will be published in SCIE and SCOPUS indexed Journal. For more details, go to publication tab.
+                For more details regarding publication, go to the
+                <Link to="/publish" style={{ color: 'magenta', textDecoration: 'underline', marginLeft: '5px' }}>
+                  Publication Tab
+                </Link>.
               </marquee>
               <p className="association-with">
                 <br />
-              DRDO, New Delhi <span>,</span>
+                DRDO, New Delhi <span>,</span>
                 <br />
                 SERB-ANRF, New Delhi <span>,</span>
                 <br />

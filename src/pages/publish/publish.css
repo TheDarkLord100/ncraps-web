@@ -1,42 +1,138 @@
 .publish-page {
-    padding-top:5rem;
-    background-color: #ffffff;
-    position: relative;
-    background-image: url('../../assets/images/back.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    z-index: 1;
-    color: #000;
+  padding-top: 5rem;
+  background-color: #ffffff;
+  position: relative;
+  background-image: url('../../assets/images/back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 1;
+  color: #000;
+}
+
+.publish-page .important {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.publish-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+
+.tabs {
+  padding: 1.25rem 6.25rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.publish-content {
+  max-width: 1000px;
+  margin: 0rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.publish-content h1 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.publish-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.publish-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.guidelines {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guideline-box {
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border-left: 4px solid #004080;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.guideline-box a {
+  color: #0077cc;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.guideline-box a:hover {
+  text-decoration: underline;
+}
+
+.deadline {
+  color: red;
+  font-weight: 600;
+}
+
+.blank {
+  height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabs,
+  .publish-page .important {
+    padding: 1.25rem 1.25rem;
   }
 
-  .publish-page .important{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .publish-content {
+    padding: 1rem;
   }
-  
-  .publish-page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-    z-index: -1; /* Keeps overlay behind the content */
+
+  .publish-content h1 {
+    font-size: 1.5rem;
   }
-  
-  .tabs {
-    padding: 1.25rem 6.25rem;
-    border-radius: 0.5rem;
+
+  .publish-content h2 {
+    font-size: 1.2rem;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .tabs, .publish-page .important {
-      padding: 1.25rem 1.25rem;
-    }
-    
+
+  .publish-content h3 {
+    font-size: 1.1rem;
   }
+
+  .guideline-box {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}
