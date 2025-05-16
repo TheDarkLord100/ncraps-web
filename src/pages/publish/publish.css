@@ -79,6 +79,12 @@
   gap: 1rem;
 }
 
+.guidelines{
+  list-style: bullet;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
 .guideline-box {
   padding: 1rem 1.5rem;
   background: #f9f9f9;
